@@ -15,14 +15,14 @@ if(isset($_POST)){
 	}
 
 	if($formok){
-		$headers = "From: info@nandccontractors.com" . "\r\n";
+		$headers = "From: {$email}" . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$emailbody = "<p>You have recieved a new message from the enquiries form on your website.</p>
                   <p><strong>Name: </strong> {$name} </p>
                   <p><strong>Email Address: </strong> {$email} </p>
                   <p><strong>Message: </strong> {$message} </p> ";
 
-    mail("sales@nandccontractors.com","New Enquiry",$emailbody,$headers);
+    mail("siddiquerezakhan@gmail.com","New Enquiry",$emailbody,$headers);
 
 	}
 
